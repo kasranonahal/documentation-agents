@@ -1,0 +1,13 @@
+# Example eval case — copy this file to add more (target: 10 cases in Phase 6).
+id: "001"
+doc_type: reference
+repo: src/docagent
+request: Write reference documentation for the repo_scan module.
+must_include:
+  - scan_repo
+  - render_map
+  - known_symbols
+  - path:line
+must_not_include:
+  - scan_directory      # does not exist — hallucination trap
+  - "--recursive"       # no such flag

@@ -1,0 +1,28 @@
+# Reviewer rubric (docs/06). Score each 1-5; quote evidence for anything < 4.
+criteria:
+  type_fit:
+    question: Does the page stay in exactly one Diátaxis mode?
+    5: Pure mode, matches template.
+    3: Mostly one mode with some drift (e.g. a tutorial that explains theory at length).
+    1: Mixed or wrong mode.
+  accuracy:
+    question: Is every factual claim supported by the source?
+    5: All claims traceable; no invented names/params/defaults.
+    3: Minor imprecision, nothing that would break a reader's code.
+    1: Contains invented or wrong API details.
+  completeness:
+    question: Is everything the reader needs present?
+    5: All public params/steps/prereqs covered.
+    3: Small gaps a competent reader can fill.
+    1: Reader cannot complete the task / find the fact.
+  runnability:
+    question: Do examples run as shown?
+    5: All examples run and outputs match.
+    3: Run with trivial fixes.
+    1: Broken examples.
+  clarity:
+    question: Could the target reader act on it without asking anyone?
+    5: Yes, first try.
+    3: With some re-reading.
+    1: No.
+pass_threshold: 4   # every criterion must be >= this
